@@ -1,0 +1,461 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Responsive Bootstrap Layout</title>
+    <!-- Include Bootstrap CSS -->
+    <link
+      rel="stylesheet"
+      href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+    />
+    <link rel="stylesheet" type="text/css" href="./styles/styles.css" />
+    <!-- import google fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700;800;900&display=swap"
+      rel="stylesheet"
+    />
+
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+    />
+  </head>
+  <body>
+    <!-- navbar -->
+    <nav class="navbar navbar-expand-lg navbar-light custom-navbar">
+      <div class="container">
+        <a class="navbar-brand white-text" href="#">Saasify</a>
+        <button
+          class="navbar-toggler ml-auto"
+          type="button"
+          data-toggle="collapse"
+          data-target="#navbarNav"
+          aria-controls="navbarNav"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav ml-auto">
+            <!-- Add ml-auto class here -->
+            <li class="nav-item active">
+              <a class="nav-link white-text" href="#"
+                >Home <span class="sr-only">(current)</span></a
+              >
+            </li>
+            <li class="nav-item">
+              <a class="nav-link white-text" href="#">About</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link white-text" href="#">Services</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link white-text" href="#">Contact</a>
+            </li>
+            <li class="nav-item ml-5">
+              <button class="btn btn-primary">Free Trial</button>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+    <!-- main banner -->
+    <div class="gradient-back main-banner animate__animated animate__zoomIn">
+      <div class="container">
+        <div class="row">
+          <div class="col-12">
+            <h1 class="white-text text-center pt-5 mt-4 pb-4">
+              The Fastest Way For Startup To <br />Do Analysis Dashboard
+            </h1>
+            <div class="px-md-5 mx-md-5">
+              <p class="px-md-5 mx-md-5 white-text text-center">
+                Lorem Ipsum is simply dummy text of the printing and typesetting
+                industry. Lorem Ipsum has been the industry's
+              </p>
+            </div>
+            <div class="d-flex justify-content-center my-5">
+              <form>
+                <div class="row">
+                  <div class="col-md-12 col-12 mb-3 d-flex email-input">
+                    <input
+                      type="text"
+                      class="form-control my-2"
+                      placeholder="Enter something"
+                      aria-label="Enter something"
+                      aria-describedby="submit-button"
+                    />
+                    <button
+                      class="btn btn-primary my-2 alpha-btn"
+                      type="submit"
+                      id="submit-button"
+                    >
+                      Subscribe
+                    </button>
+                  </div>
+                </div>
+              </form>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- main asset on banner -->
+    <div class="main-div">
+      <div class="my-5">
+        <div class="container">
+          <div class="row">
+            <div class="col-12 text-center">
+              <img
+                src="./Assets/main_image@3x.png"
+                class="mx-auto w-50 animate__animated animate__zoomIn"
+                alt="Dashboard image"
+              />
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- company set -->
+    <div class="container">
+      <div class="row">
+        <div class="col-12 text-center mt-3 mb-5">
+          <img
+            src="./Assets/companySet@3x.png"
+            class="mx-auto w-100 mb-5"
+            alt="Dashboard image"
+          />
+        </div>
+      </div>
+    </div>
+    <!-- services -->
+    <div class="container services">
+      <div class="row">
+        <div class="col-12 text-center pb-4">
+          <h2>Our Services</h2>
+          <p class="opacity-half">
+            Here will be the providing services for you.
+          </p>
+        </div>
+        <div
+          class="col-md-4 text-center pt-5 mb-4 animate__animated animate__flipInY"
+        >
+          <div class="card-vew py-4 d-flex flex-column" style="height: 100%">
+            <img
+              src="./Assets/icon1@3x.png"
+              class="mx-auto p-2 img-fluid my-1"
+              style="max-height: 100px"
+            />
+            <div class="flex-grow-1">
+              <h4 class="m-3">Task Management</h4>
+              <p class="px-md-5">
+                Sample text will be here with the mock data allocated for the
+                developer
+              </p>
+            </div>
+            <a href="">Read More ➤</a>
+          </div>
+        </div>
+        <div
+          class="col-md-4 text-center pt-5 mb-4 animate__animated animate__flipInY"
+        >
+          <div class="card-vew py-4 d-flex flex-column" style="height: 100%">
+            <img
+              src="./Assets/icon2@3x.png"
+              class="mx-auto p-2 img-fluid my-1"
+              style="max-height: 100px"
+            />
+            <div class="flex-grow-1">
+              <h4 class="m-3">Design System</h4>
+              <p class="px-md-5">
+                Sample text will be here with the mock data allocated for the
+                developer
+              </p>
+            </div>
+            <a href="">Read More ➤</a>
+          </div>
+        </div>
+        <div
+          class="col-md-4 text-center pt-5 mb-4 animate__animated animate__flipInY"
+        >
+          <div class="card-vew py-4 d-flex flex-column" style="height: 100%">
+            <img
+              src="./Assets/icon3@3x.png"
+              class="mx-auto p-2 img-fluid my-1"
+              style="max-height: 100px"
+            />
+            <div class="flex-grow-1">
+              <h4 class="m-3">Task Management</h4>
+              <p class="px-md-5">
+                Sample text will be here with the mock data allocated for the
+                developer
+              </p>
+            </div>
+            <a href="">Read More ➤</a>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- get Started div -->
+    <div class="ash-background mt-5">
+      <div class="container mt-2">
+        <div class="row">
+          <div class="col-md-6">
+            <div class="pt-5 mt-5">
+              <h2>Powerful and Easy to <br />Use SAAS Platform</h2>
+              <p class="py-3">
+                Sample text will be here with the mock data allocated for the
+                developer
+              </p>
+              <button class="btn btn-primary" type="submit" id="submit-button">
+                GET STARTED
+              </button>
+            </div>
+          </div>
+
+          <div class="col-md-6 d-flex justify-content-center">
+            <img
+              src="./Assets/manIcon@3x.png"
+              alt="Image 2"
+              class="img-fluid h-75 p-5"
+            />
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- video section -->
+    <div class="gradient-back">
+      <div class="container">
+        <div class="row py-5">
+          <div class="col-md-6 d-flex align-items-center">
+            <div>
+              <h2 class="white-text">
+                Powerful and Easy to <br />Use SAAS Platform
+              </h2>
+              <p class="white-text opacity-half">
+                Sample text will be here with the mock data alocated for the
+                developer
+              </p>
+              <button
+                class="btn btn-primary my-2 beta-btn"
+                type="submit"
+                id="submit-button"
+              >
+                GET STARTED NOW
+              </button>
+            </div>
+          </div>
+          <div class="col-md-6">
+            <img
+              src="./Assets/Video@3x.png"
+              alt="Image 2"
+              class="img-fluid p-3"
+            />
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- packages -->
+    <div class="container packages">
+      <div class="row m-5">
+        <div class="col-12 text-center pb-4">
+          <h2 class="font-weight-bold">Select Packages</h2>
+          <p class="opacity-half">
+            Here will be the providing services for you.
+          </p>
+          <div>
+            <img
+              src="./Assets/prizing@3x.png"
+              class="mx-auto p-3 img-fluid"
+              style="max-height: 100px"
+            />
+          </div>
+        </div>
+        <div class="col-md-4 pt-3 mb-4 single-package">
+          <div
+            class="package-card-vew p-5 d-flex flex-column"
+            style="height: 100%"
+          >
+            <div class="flex-grow-1">
+              <h5 class="">Silver</h5>
+              <div class="d-flex">
+                <h3 class="font-weight-bold pink-text">$60</h3>
+                <h3 class="opacity-half font-weight-light">/Year</h3>
+              </div>
+              <ul class="my-3">
+                <li>Feature 01</li>
+                <li>Feature 02</li>
+                <li>Feature 03</li>
+                <li>Feature 04</li>
+                <li>Feature 05</li>
+              </ul>
+            </div>
+            <a href="" class="text-center">More Details ➤</a>
+          </div>
+        </div>
+        <div class="col-md-4 pt-3 mb-4 single-package">
+          <div
+            class="package-card-vew p-5 d-flex flex-column"
+            style="height: 100%"
+          >
+            <div class="flex-grow-1">
+              <h5 class="">Gold</h5>
+              <div class="d-flex">
+                <h3 class="font-weight-bold pink-text">$90</h3>
+                <h3 class="opacity-half font-weight-light">/Year</h3>
+              </div>
+              <ul class="my-3">
+                <li>Feature 01</li>
+                <li>Feature 02</li>
+                <li>Feature 03</li>
+                <li>Feature 04</li>
+                <li>Feature 05</li>
+              </ul>
+            </div>
+            <a href="" class="text-center">More Details ➤</a>
+          </div>
+        </div>
+        <div class="col-md-4 pt-3 mb-4 single-package animate-on-scroll">
+          <div
+            class="package-card-vew p-5 d-flex flex-column"
+            style="height: 100%"
+          >
+            <div class="flex-grow-1">
+              <h5 class="">Platinum</h5>
+              <div class="d-flex">
+                <h3 class="font-weight-bold pink-text">$120</h3>
+                <h3 class="opacity-half font-weight-light">/Year</h3>
+              </div>
+              <ul class="my-3">
+                <li>Feature 01</li>
+                <li>Feature 02</li>
+                <li>Feature 03</li>
+                <li>Feature 04</li>
+                <li>Feature 05</li>
+              </ul>
+            </div>
+            <div class="new-arrival-tag m-3">New Arrival</div>
+            <a href="" class="text-center">More Details ➤</a>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- testemanials -->
+    <div class="container packages animate-on-scrol">
+      <div class="row m-5">
+        <div class="col-12 text-center pb-4">
+          <h2 class="font-weight-bold">Customer Feedbacks</h2>
+          <p class="opacity-half">
+            Here will be the feedbacks for provided services.
+          </p>
+        </div>
+        <div class="col-md-6 pt-3 mb-4">
+          <div class="p-5 single-testamonial">
+            <h4 class="mb-3">Customer Name</h4>
+            <p class="opacity-half">
+              Sample text will be here with the mock data allocated for the
+              developer
+            </p>
+            <div>
+              <img
+                src="./Assets/star@3x.png"
+                class="img-fluid"
+                style="max-height: 25px"
+              />
+            </div>
+          </div>
+        </div>
+        <div class="col-md-6 pt-3 mb-4">
+          <div class="p-5 single-testamonial">
+            <h4 class="mb-3">Customer Name</h4>
+            <p class="opacity-half">
+              Sample text will be here with the mock data allocated for the
+              developer
+            </p>
+            <div>
+              <img
+                src="./Assets/star@3x.png"
+                class="img-fluid"
+                style="max-height: 25px"
+              />
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- Footer -->
+    <footer class="footer bg-dark text-white">
+      <div class="container pt-5">
+        <div class="row">
+          <div class="col-md-4">
+            <h5>Contact Us</h5>
+            <p class="opacity-half">
+              Address: 123 Example St, City, Country<br />
+              Email: info@example.com<br />
+              Phone: +1234567890
+            </p>
+          </div>
+          <div class="col-md-4">
+            <h5>Quick Links</h5>
+            <ul class="list-unstyled">
+              <li><a href="#">Home</a></li>
+              <li><a href="#">About</a></li>
+              <li><a href="#">Services</a></li>
+              <li><a href="#">Contact</a></li>
+            </ul>
+          </div>
+          <div class="col-md-4">
+            <h5>Follow Us</h5>
+            <ul class="list-unstyled">
+              <li>
+                <a href="#"><i class="fab fa-facebook"></i> Facebook</a>
+              </li>
+              <li>
+                <a href="#"><i class="fab fa-twitter"></i> Twitter</a>
+              </li>
+              <li>
+                <a href="#"><i class="fab fa-linkedin"></i> LinkedIn</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </footer>
+
+    <!-- Include Bootstrap JS and jQuery -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <script>
+      // Function to handle animations on scroll using Intersection Observer
+      function handleScrollAnimations(entries, observer) {
+        entries.forEach((entry) => {
+          if (entry.isIntersecting) {
+            entry.target.classList.add("animate__animated");
+            observer.unobserve(entry.target);
+          }
+        });
+      }
+
+      // Create an Intersection Observer instance
+      const observer = new IntersectionObserver(handleScrollAnimations, {
+        root: null,
+        rootMargin: "0px",
+        threshold: 0.2, // Adjust this threshold as needed
+      });
+
+      // Get all elements with the animate-on-scroll class
+      const elementsToAnimate = document.querySelectorAll(".animate-on-scroll");
+
+      // Observe each element
+      elementsToAnimate.forEach((element) => {
+        observer.observe(element);
+      });
+    </script>
+  </body>
+</html>
